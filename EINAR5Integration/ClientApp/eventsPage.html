@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/eventsPageStyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <form id="eventForm">
+        <label for="startDate">Start Date:</label><br>
+        <input type="date" id="startDate" name="startDate"><br>
+        <label for="endDate">End Date:</label><br>
+        <input type="date" id="endDate" name="endDate"><br>
+        <input type="submit" value="Submit">
+    </form>
+    <div id="loadingModalContainer">
+        <div id="loadingModal" style="display: none;"></div>
+        <div id="loadingText" style="display: none;">Loading events... </div>
+    </div>
+
+    <div id="eventList"></div>
+    <script src="/scripts/getEvents.js"></script>
+</body>
+</html>

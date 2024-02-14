@@ -1,0 +1,6 @@
+@EINAR5Integration_HostAddress = http://localhost:5193
+
+GET {{EINAR5Integration_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
